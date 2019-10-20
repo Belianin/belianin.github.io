@@ -1,4 +1,4 @@
-.songcard {
+.paper {
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 1);
     border-bottom-color: #2e2c2d;
@@ -6,7 +6,7 @@
     border-radius: 8px;
 }
 
-.songcard .content {
+.paper .content {
     padding-left: 16px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -17,7 +17,7 @@
     color: dimgray;
 }
 
-.songcard:hover {
+.active:hover {
     animation: choosing 100ms forwards;
 }
 
