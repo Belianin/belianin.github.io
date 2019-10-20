@@ -83,17 +83,7 @@ function loadSongs() {
         content.push(`
 <section class="paper active" style="width: 400px">
     <div class="content">
-        <h3 onclick="playSong(${i + 1})">${song.title}</h3>
-        <table>
-            <tr>
-                <td style="width: 60px">
-                    <div class="clickable" style="display: inline-block" onclick="setSongText(${i + 1})">текст</div>         
-                </td>
-                <td>
-                    <div class="clickable" style="display: inline-block" onclick="setSongText(${i + 1}, true)">с аккордами</div> 
-                </td>
-            </tr>
-        </table>        
+        <span onclick="playSong(${i + 1})">${i + 1}.${song.title}</span>       
         <div id="text${i + 1}"></div>
     </div>       
  </section>
@@ -109,6 +99,10 @@ function drawProgressBar() {
     let player = document.getElementById("player");
     let curAudio = document.getElementById("mainPlayer");
 
+    if (player.paused)
+        return;
+
+
     let ctx = player.getContext('2d');
     ctx.fillStyle = "lightgray";
     ctx.fillRect(0, 0, maxWidth, 64); //24
@@ -117,3 +111,18 @@ function drawProgressBar() {
 }
 
 window.onload = loadSongs;
+
+let a = `
+        <table>
+            <tr>
+                <td>                
+                    <h4 onclick="playSong(${i + 1})">${i + 1}.${song.title}</h4>
+                </td>
+                <td style="width: 60px">
+                    <div class="clickable" style="display: inline-block" onclick="setSongText(${i + 1})">т</div>         
+                </td>
+                <td>
+                    <div class="clickable" style="display: inline-block" onclick="setSongText(${i + 1}, true)">а</div> 
+                </td>
+            </tr>
+        </table>  `;
