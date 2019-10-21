@@ -8,26 +8,18 @@
     <link rel="stylesheet" href="css/music.css">
     <meta charset="utf-8">
     <meta lang="ru">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="bg-image"></div>
-        <div class="container">
-            <section class="component" style="width: 600px;">
-                <div class="paper" style="width: 600px; height: 100%; position: fixed">
-                <img src="src/music/tanyasuffering/cover.jpg" alt="обложка" class="cover">
-                    <div class="content">
-                        <h1>Танястрадания</h1>
-                        <p>Бла-бла-бла</p>
-                    </div>
-                </div>
-            </section>
-            <section class="component">
-                <div class="list" style="width: 424px; height: 100%; position: fixed; z-index: -50; left: 600px; top: 0; vertical-align: top;"></div>
-                <div id="songList" style="margin-left: 8px; margin-top: 8px; display: inline-block; vertical-align: top"></div>
-            </section>
-        </div>
+        <section class="container paper">
+            <div style="height: 32px"></div>
+            <img src="src/music/tanyasuffering/cover.jpg" alt="обложка" class="cover">
+            <div id="songList" style="padding-left: 100px; padding-top: 32px; padding-bottom: 32px;"></div>
+        </section>
     </main>
+    <div style="height: 80px"></div>
     <footer>
         <canvas id="player" width="600" style="margin-left: auto; margin-right: auto; right: 50%"></canvas>
         <audio controls src="src/music/tanyasuffering/2.mp3" style="right: 0; position: fixed" id="mainPlayer"></audio>

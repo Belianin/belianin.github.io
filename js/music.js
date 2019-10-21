@@ -81,9 +81,9 @@ function loadSongs() {
     for (let i = 0; i < songs.length; i++) {
         const song = songs[i];
         content.push(`
-<section class="paper active" style="width: 400px">
+<section class="song active" style="width: 400px">
     <div class="content">
-        <span onclick="playSong(${i + 1})">${i + 1}.${song.title}</span>       
+        <span class="clickable" onclick="playSong(${i + 1})">${i + 1}.   ${song.title}</span>       
         <div id="text${i + 1}"></div>
     </div>       
  </section>
