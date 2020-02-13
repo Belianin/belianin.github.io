@@ -1,0 +1,26 @@
+table {
+    border-color: black;
+}
+
+td {
+    background: aliceblue;
+}
+
+.lecture-name {
+    width: 400px;
+}
+
+.schedule-table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+}
+
+.lecture-lesson {
+    background: mediumseagreen;
+}
+
+.practical-lesson {
+    background: lightseagreen;
+}
