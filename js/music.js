@@ -83,7 +83,7 @@ function loadSongs() {
         content.push(`
 <section class="song active" style="width: 400px">
     <div class="content">
-        <span class="clickable" onclick="playSong(${i + 1})">${i + 1}.   ${song.title}</span>       
+        <span class="clickable" onclick="playSong(${i + 1})">${song.title}</span>       
         <div id="text${i + 1}"></div>
     </div>       
  </section>

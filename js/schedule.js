@@ -78,13 +78,13 @@ const schedule = [
 const timeMapping = [ "9:00", '10:40', "12:50", "14:30", "16:10", "17:50"]
 
 function convertDayToHtml(day) {
-    const result = [`<tr><th>${day.title}</th></tr>`];
+    const result = [`<tr><th colspan="3">${day.title}</th></tr>`];
     let counter = 0;
     for (const lecture of day.lectures) {
         if (lecture === null) {
             result.push(`<tr><td>${timeMapping[counter]}</td><td></td><td></td></tr>`)
         } else {
-            const className = lecture.type === "lecture" ? "lecture-lesson" : "practical-lesson"
+            const className = lecture.type === "lecture" ? "lecture-lesson" : "practical-lesson";
             result.push(`<tr><td class=${className}>${timeMapping[counter]}</td><td class="lecture-name ${className}">${lecture.title}</td><td class=${className}>${lecture.classRoom}</td></tr>`)
         }
         counter++;

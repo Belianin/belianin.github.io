@@ -1,26 +1,41 @@
+#schedule {
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-left: 0;
+}
+
 table {
-    border-color: black;
+    border-collapse: collapse;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 td {
-    background: aliceblue;
+    background: #fff8eb;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+th {
+    background: white;
+    border: 1px solid black;
+    padding: 0.5rem;
 }
 
 .lecture-name {
     width: 400px;
 }
 
-.schedule-table {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-color: black;
-}
-
 .lecture-lesson {
-    background: mediumseagreen;
+    background: #FCBF49;
 }
 
 .practical-lesson {
-    background: lightseagreen;
+    background: #F77F00;
 }
