@@ -5,10 +5,13 @@ const schedule = [
             null,
             null,
             {
-                title: "Физра"
+                title: "Физра",
+                classRoom: "Манеж",
+                type: "practical",
+                time: "12:00"
             },
             {
-                title: "ЛОИ",
+                title: "ЛОИ (четные)",
                 classRoom: "632",
                 type: "lecture"
             }
@@ -72,10 +75,22 @@ const schedule = [
                 type: "lecture"
             }
         ]
+    },
+    {
+        title: "Суббота",
+        lectures: [
+            null,
+            {
+                title: "Физра",
+                classRoom: "Манеж",
+                type: "practical",
+                time: "10:15"
+            }
+        ]
     }
 ];
 
-const timeMapping = [ "9:00", '10:40', "12:50", "14:30", "16:10", "17:50"]
+const timeMapping = [ "9:00", '10:40', "12:50", "14:30", "16:10", "17:50"];
 
 function convertDayToHtml(day) {
     const result = [`<tr><th colspan="3">${day.title}</th></tr>`];
@@ -84,8 +99,9 @@ function convertDayToHtml(day) {
         if (lecture === null) {
             result.push(`<tr><td>${timeMapping[counter]}</td><td></td><td></td></tr>`)
         } else {
+            const lectureTime = lecture.time || timeMapping[counter];
             const className = lecture.type === "lecture" ? "lecture-lesson" : "practical-lesson";
-            result.push(`<tr><td class=${className}>${timeMapping[counter]}</td><td class="lecture-name ${className}">${lecture.title}</td><td class=${className}>${lecture.classRoom}</td></tr>`)
+            result.push(`<tr><td class=${className}>${lectureTime}</td><td class="lecture-name ${className}">${lecture.title}</td><td class=${className}>${lecture.classRoom}</td></tr>`)
         }
         counter++;
     }
