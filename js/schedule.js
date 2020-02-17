@@ -97,7 +97,7 @@ function convertDayToHtml(day) {
     let counter = 0;
     for (const lecture of day.lectures) {
         if (lecture === null) {
-            result.push(`<tr><td>${timeMapping[counter]}</td><td></td><td></td></tr>`)
+            //result.push(`<tr><td>${timeMapping[counter]}</td><td></td><td></td></tr>`)
         } else {
             const lectureTime = lecture.time || timeMapping[counter];
             const className = lecture.type === "lecture" ? "lecture-lesson" : "practical-lesson";
