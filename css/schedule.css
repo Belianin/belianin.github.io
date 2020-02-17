@@ -1,11 +1,13 @@
 #schedule {
     width: 100%;
+    padding-top: 64px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     margin-top: 0;
     margin-left: 0;
+    background-color: lightyellow;
 }
 
 table {

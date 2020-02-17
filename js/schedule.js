@@ -13,7 +13,7 @@ const schedule = [
             {
                 title: "ЛОИ (четные)",
                 classRoom: "632",
-                type: "lecture"
+                type: "practical"
             }
         ]
     },
