@@ -37,6 +37,17 @@ const schedule = [
                 title: "КГГ",
                 classRoom: "517",
                 type: "practical"
+            },
+            null,
+            {
+                title: "Android",
+                classRoom: "540",
+                type: "lecture"
+            },
+            {
+                title: "Android",
+                classRoom: "540",
+                type: "practical"
             }
         ]
     },
