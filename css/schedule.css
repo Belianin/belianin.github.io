@@ -9,7 +9,7 @@ body {
     margin-left: 0;
     background-image: url(../src/wallhaven1.jpg);
     background-repeat: no-repeat;
-    background-blend-mode:overlay;
+    background-size: auto auto;
 }
 
 table {
