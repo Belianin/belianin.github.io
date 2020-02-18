@@ -25,6 +25,17 @@ const schedule = [
                 title: "КГГ",
                 classRoom: "622",
                 type: "lecture"
+            },
+            null,
+            {
+                title: "Backend",
+                classRoom: "526",
+                type: "lecture"
+            },
+            {
+                title: "Backend",
+                classRoom: "526",
+                type: "practical"
             }
         ]
     },
@@ -84,6 +95,16 @@ const schedule = [
                 title: "Тервер",
                 classRoom: "509",
                 type: "lecture"
+            },
+            {
+                title: "Frontend",
+                classRoom: "511",
+                type: "lecture"
+            },
+            {
+                title: "Frontend",
+                classRoom: "511",
+                type: "practical"
             }
         ]
     },
