@@ -7,9 +7,11 @@ body {
     font-family: 'Roboto', sans-serif;
     margin-top: 0;
     margin-left: 0;
-    background-image: url(../src/wallhaven1.jpg);
-    background-repeat: no-repeat;
-    background-size: auto auto;
+    background: url(../src/wallhaven1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 table {
