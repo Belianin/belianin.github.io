@@ -24,13 +24,12 @@ table {
 }
 
 td {
-    background: #fff8eb;
     border: 1px solid black;
     padding: 0.5rem;
 }
 
 th {
-    background: white;
+    background: #fff8ebBB;
     border: 1px solid black;
     padding: 0.5rem;
 }
@@ -40,13 +39,13 @@ th {
 }
 
 .lecture-lesson {
-    background: #FCBF49DD;
+    background: #FCBF49BB;
 }
 
 .practical-lesson {
-    background: #F77F00DD;
+    background: #F77F00BB;
 }
 
 .current-day {
-    background: yellow;
+    background: #faff00BB;
 }
