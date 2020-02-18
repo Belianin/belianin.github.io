@@ -11,10 +11,21 @@ function loadFile(filePath) {
     return result;
 }
 
+const dayMapping = ["Воскресенье", "Понедельние", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+function isToday(day) {
+    const currentDay = new Date().getDay();
+
+    return dayMapping[currentDay] === day.title;
+}
+
 const timeMapping = [ "9:00", '10:40', "12:50", "14:30", "16:10", "17:50"];
 
 function convertDayToHtml(day) {
-    const result = [`<tr><th colspan="3">${day.title}</th></tr>`];
+    const dayTh = isToday(day) ?
+        `<tr><th colspan="3" class="current-day">${day.title}</th></tr>` :
+        `<tr><th colspan="3">${day.title}</th></tr>`;
+    const result = [dayTh];
     let counter = 0;
     for (const lecture of day.lectures) {
         if (lecture === null) {
@@ -32,7 +43,7 @@ function convertDayToHtml(day) {
 
 function loadSchedule() {
     const result = [];
-    const schedule = JSON.parse(loadFile("src/schedule-6.json"))
+    const schedule = JSON.parse(loadFile("src/schedule-6.json"));
     for (const day of schedule) {
         result.push(convertDayToHtml(day))
     }

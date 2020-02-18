@@ -46,3 +46,7 @@ th {
 .practical-lesson {
     background: #F77F00DD;
 }
+
+.current-day {
+    background: yellow;
+}
