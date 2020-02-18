@@ -1,126 +1,15 @@
-const schedule = [
-    {
-        title: "Понедельник",
-        lectures: [
-            null,
-            null,
-            {
-                title: "Физра",
-                classRoom: "Манеж",
-                type: "practical",
-                time: "12:00"
-            },
-            {
-                title: "ЛОИ (четные)",
-                classRoom: "632",
-                type: "practical"
-            }
-        ]
-    },
-    {
-        title: "Вторник",
-        lectures: [
-            null,
-            {
-                title: "КГГ",
-                classRoom: "622",
-                type: "lecture"
-            },
-            null,
-            {
-                title: "Backend",
-                classRoom: "526",
-                type: "lecture"
-            },
-            {
-                title: "Backend",
-                classRoom: "526",
-                type: "practical"
-            }
-        ]
-    },
-    {
-        title: "Среда",
-        lectures: [
-            null,
-            null,
-            {
-                title: "КГГ",
-                classRoom: "517",
-                type: "practical"
-            },
-            null,
-            {
-                title: "Android",
-                classRoom: "540",
-                type: "lecture"
-            },
-            {
-                title: "Android",
-                classRoom: "540",
-                type: "practical"
-            }
-        ]
-    },
-    {
-        title: "Четверг",
-        lectures: [
-            {
-                title: "Физика",
-                classRoom: "611",
-                type: "practical"
-            },
-            {
-                title: "Физика",
-                classRoom: "632",
-                type: "lecture"
-            },
-            {
-                title: "ЛОИ",
-                classRoom: "632",
-                type: "lecture"
-            }
-        ]
-    },
-    {
-        title: "Пятница",
-        lectures: [
-            null,
-            {
-                title: "Тервер",
-                classRoom: "621",
-                type: "practical"
-            },
-            {
-                title: "Тервер",
-                classRoom: "509",
-                type: "lecture"
-            },
-            {
-                title: "Frontend",
-                classRoom: "511",
-                type: "lecture"
-            },
-            {
-                title: "Frontend",
-                classRoom: "511",
-                type: "practical"
-            }
-        ]
-    },
-    {
-        title: "Суббота",
-        lectures: [
-            null,
-            {
-                title: "Физра",
-                classRoom: "Манеж",
-                type: "practical",
-                time: "10:15"
-            }
-        ]
+function loadFile(filePath) {
+    let result = null;
+    const xmlHttp = new XMLHttpRequest();
+    xmlHttp.open("GET", filePath, false);
+    xmlHttp.send();
+
+    if (xmlHttp.status === 200) {
+        result = xmlHttp.responseText;
     }
-];
+
+    return result;
+}
 
 const timeMapping = [ "9:00", '10:40', "12:50", "14:30", "16:10", "17:50"];
 
@@ -143,6 +32,7 @@ function convertDayToHtml(day) {
 
 function loadSchedule() {
     const result = [];
+    const schedule = JSON.parse(loadFile("src/schedule-6.json"))
     for (const day of schedule) {
         result.push(convertDayToHtml(day))
     }
