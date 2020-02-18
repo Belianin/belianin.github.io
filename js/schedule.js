@@ -126,7 +126,7 @@ function loadSchedule() {
         result.push(convertDayToHtml(day))
     }
 
-    const doc = document.getElementById("schedule")
+    const doc = document.getElementById("schedule");
     doc.innerHTML = `<table class="schedule-table">${result.join("")}</table>`
 }
 
