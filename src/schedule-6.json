@@ -51,8 +51,8 @@
       },
       null,
       {
-        "title": "Android",
-        "classRoom": "540",
+        "title": "Android/Алгоримтмы играющие в игры",
+        "classRoom": "540/622",
         "type": "lecture"
       },
       {
@@ -83,7 +83,7 @@
       null,
       null,
       {
-        "title": "ФП",
+        "title": "Функционально программирование",
         "classRoom": "540",
         "type": "lecture"
       }
