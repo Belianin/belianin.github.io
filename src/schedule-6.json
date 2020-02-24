@@ -79,6 +79,13 @@
         "title": "ЛОИ",
         "classRoom": "632",
         "type": "lecture"
+      },
+      null,
+      null,
+      {
+        "title": "ФП",
+        "classRoom": "540",
+        "type": "lecture"
       }
     ]
   },
