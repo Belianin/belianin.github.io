@@ -51,7 +51,7 @@
       },
       null,
       {
-        "title": "Android/Алгоримтмы играющие в игры",
+        "title": "Android / Алгоримтмы играющие в игры",
         "classRoom": "540/622",
         "type": "lecture"
       },
@@ -66,7 +66,7 @@
     "title": "Четверг",
     "lectures": [
       {
-        "title": "Физика",
+        "title": "Физика (четные)",
         "classRoom": "611",
         "type": "practical"
       },
@@ -83,8 +83,8 @@
       null,
       null,
       {
-        "title": "Функционально программирование",
-        "classRoom": "540",
+        "title": "Haskell / Scala",
+        "classRoom": "540/611",
         "type": "lecture"
       }
     ]
