@@ -18,5 +18,6 @@ body {
 }
 
 .history {
-    color: lightslategray
+    padding: 8px 0 8px 0;
+    color: #525252
 }
