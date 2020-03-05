@@ -4,6 +4,7 @@ a {
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
     background-color: black;
     text-align: center;
     cursor: default;
@@ -11,6 +12,7 @@ body {
 
 .glossary {
     color: whitesmoke;
+    padding: 64px 0 64px 0;
 }
 
 .term-section {
