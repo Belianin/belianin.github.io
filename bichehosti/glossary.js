@@ -1,3 +1,26 @@
+const tempMoments = [
+    {
+        "title": "Яблоки на мейне",
+        "definition": "Вернуть говнолут пижаме",
+        "history": "Когда мы залетели в Реддинг и убили пижаму по имени Антон, то обнаружили у него в инвентаре гору говнолута и в том числе более десятка яблок. Сжалившись над бедной пижамой, мы вернулись на мейн, выложили его лут и написали в нулевой: <div class=\"quote centered\">\"Антон, яблоки на мейне\"</div>"
+    },
+    {
+        "title": "Толстяк с воды",
+        "definition": "Неожиданное событие",
+        "history": "Это произошло, когда БИЧЕХОСТЫ ещё только познавали мир Supreme Commander. Играя очередной Dual Gap, мы проморгали как на базу из реки вышел Толсяк."
+    },
+    {
+        "title": "Гучигэнг",
+        "definition": "SWAG убийство через модернизацию тактики Геттоганшип",
+        "history": "Изначально Несс неправильно услышал слово \"Геттоганшип\" как \"Гучигэнг\", а потом Квир записал <a href=\"https://www.youtube.com/watch?v=9V1sd3MNFO0\">видео</a> с новой тактикой, где на Т3 транспорте прилетели Титаны"
+    },
+    {
+        "title": "Можно разведку?",
+        "definition": "Самый частый вопрос, который получает воздушный участник киберспортивной команды по Supreme Commander БИЧЕХОСТОВ",
+        "history": "Несс играл на воздухе, но когда его просили разведку он не делал ¯\\_(ツ)_/¯"
+    },
+]
+
 const tempTerms = [
     {
         "anchor": "bichehosti",
@@ -51,7 +74,7 @@ const tempTerms = [
         "anchor": "rpg",
         "title": "Лайфер, Дединсайд, ЧСВ",
         "definition": "Ролевая система БИЧЕХОСТОВ",
-        "history": "<img src=\"../src/rpg.png\" alt=\"треугольник\" class=\"centered small\">"
+        "history": "<div class=\"centered small\">Лайфер<br>/\\<br>/&nbsp;&nbsp;&nbsp;\\<br>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\<br>/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\</div>"
     },
     {
         "anchor": "lifer",
@@ -94,8 +117,17 @@ function onLoad() {
         result.push(convertToHtml(term))
     }
 
-    const doc = document.getElementById("content");
-    doc.innerHTML = result.join("")
+    const content = document.getElementById("content");
+    content.innerHTML = result.join("")
+
+    const result2 = [];
+    moments = tempMoments
+    for (const moment of moments) {
+        result2.push(convertToHtml(moment))
+    }
+
+    const content2 = document.getElementById("content2");
+    content2.innerHTML = result2.join("")
 }
 
 window.onload = onLoad;

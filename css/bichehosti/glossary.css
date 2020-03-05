@@ -20,7 +20,7 @@ body {
 
 .history {
     padding: 8px 0 8px 0;
-    color: #3F3F3F
+    color: rgb(116, 116, 116)
 }
 
 .quote {
@@ -38,4 +38,5 @@ body {
 
 .small {
     width: 300px;
+    text-align: center;
 }
