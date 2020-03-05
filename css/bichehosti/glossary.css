@@ -2,8 +2,12 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: red
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Consolas', 'Lucida Console', 'Roboto', sans-serif;
     font-size: 18px;
     background-color: black;
     text-align: center;
@@ -27,11 +31,11 @@ body {
 }
 
 .history:hover {
-    color: gold;
+    color: lime;
 }
 
 .quote {
-    font-family: "Lucida Console", "monospace";
+    font-family: "Consolas", "Lucida Console", "monospace";
     text-align: right;
     color: goldenrod;
 }
