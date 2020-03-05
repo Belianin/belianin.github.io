@@ -6,6 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
     text-align: center;
+    cursor: default;
 }
 
 .glossary {
@@ -20,7 +21,11 @@ body {
 
 .history {
     padding: 8px 0 8px 0;
-    color: rgb(116, 116, 116)
+    color: #4c4c4c
+}
+
+.history:hover {
+    color: gold;
 }
 
 .quote {
