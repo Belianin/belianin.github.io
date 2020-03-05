@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
@@ -11,10 +15,7 @@ body {
 .term-section {
     display: block;
     padding: 16px 0 16px 0;
-    width: 800px;
     text-align: left;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .history {
@@ -24,5 +25,17 @@ body {
 
 .quote {
     font-family: "Lucida Console", "monospace";
-    color: goldenrod
+    text-align: right;
+    color: goldenrod;
+}
+
+.centered {    
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small {
+    width: 300px;
 }
