@@ -7,13 +7,25 @@ function countRating(smile) {
     return sum / smile.ratings.length;
 }
 
+function convertRatingToHtml(rating) {
+    const result = [];
+    rating += 1 // лень
+    while (rating >= 0) {
+        const size = rating - 1 >= 1 ? 1 : rating - 1;
+        result.push(`<div style="width: ${50 * size}px; height: 16px; background-color: gold; border: 1px solid black; display: inline-block"></div>`)
+        rating -= 1;
+    }
+
+    return result.join("")
+}
+
 function convertToHtml(smile) {
     return `
     <section class="term-section centered">
         <div>
             <img src="./data/smiles/${smile.title}.png" style="height: 2em; width: auto"></ig><b> ${smile.title}</b> — ${smile.description}
         </div>
-        <div style="width: ${50 * countRating(smile)}px; height: 16px; background-color: gold; display: inline-block"></div><span style="color: gold"> ${countRating(smile)}</span>
+            ${convertRatingToHtml(countRating(smile))}<span style="color: gold"> ${countRating(smile)}</span>
         <div class="history">
             <i>${smile.history}</i>
         </div>
