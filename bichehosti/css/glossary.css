@@ -60,3 +60,13 @@ body {
 .emote {
     color: purple;
 }
+
+.menu-link {
+    display: inline-block;
+    color: gold;
+    font-size: 24px;
+    margin: 0 32px 0 32px;
+}
+
+.menu-container {
+}
