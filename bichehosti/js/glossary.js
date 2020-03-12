@@ -133,7 +133,7 @@ function loadFile(filePath) {
 
 function onLoad() {
     const result = [];
-    terms = tempTerms
+    const terms = tempTerms;
     for (const term of terms) {
         result.push(convertToHtml(term))
     }
@@ -142,7 +142,7 @@ function onLoad() {
     content.innerHTML = result.join("")
 
     const result2 = [];
-    moments = tempMoments
+    const moments = tempMoments;
     for (const moment of moments) {
         result2.push(convertToHtml(moment))
     }

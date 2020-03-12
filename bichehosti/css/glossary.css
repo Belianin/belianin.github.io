@@ -40,7 +40,7 @@ body {
     color: goldenrod;
 }
 
-.centered {    
+.centered {
     width: 800px;
     display: block;
     margin-left: auto;
@@ -50,4 +50,13 @@ body {
 .small {
     width: 300px;
     text-align: center;
+}
+
+.text {
+    text-align: justify;
+    color: whitesmoke;
+}
+
+.emote {
+    color: purple;
 }
