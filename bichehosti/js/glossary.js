@@ -117,6 +117,15 @@ const tempTerms = [
     }
 ]
 
+function changeTheme() {
+    const link = document.getElementById("css-link")
+    if (link.href.includes("css/glossary.css"))
+        link.href = "css/whitehost.css"
+    else
+        link.href = "css/glossary.css"
+}
+
+
 function convertToHtml(term) {
     return `
     <section class="term-section centered">
@@ -161,6 +170,8 @@ function onLoad() {
 
     const content2 = document.getElementById("content2");
     content2.innerHTML = result2.join("")
+
+    document.getElementById("theme-button").onclick = changeTheme;
 }
 
 window.onload = onLoad;
