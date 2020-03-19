@@ -1,6 +1,6 @@
 a {
     text-decoration: none;
-    color: #c0b283
+    color: #c0b283;
 }
 
 a:hover {
@@ -28,7 +28,7 @@ body {
 
 .history {
     padding: 8px 0 8px 0;
-    color: #373737
+    color: #696969;
 }
 
 .history:hover {
@@ -39,6 +39,7 @@ body {
     font-family: "Consolas", "Lucida Console", "monospace";
     text-align: right;
     color: dodgerblue;
+    text-shadow: 1px 1px 1px darkblue;
 }
 
 .centered {
