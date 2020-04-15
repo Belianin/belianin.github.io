@@ -1,18 +1,22 @@
 function convertToHtml(year) {
     const result = [];
-    result.push(`<h2>${year.year}</h2>`);
+    result.push(`<h2 class="red">${year.year}</h2>`);
     for (let month of year.months) {
         const days = [];
         for (let i = 0; i < 31; i++) {
-            days.push(`|<br>`)
+            days.push(`<span class="gray">&nbsp;|<br></span>`)
         }
 
         for (let e of month.events) {
             const className = e.type ? `class="${e.type}"` : ""
-            days[e.day - 1] = `<p ${className}>${e.day}. ${e.event}</p>`
+            days[e.day - 1] = `<p ${className}>|${e.day}| ${e.event}</p>`
         }
 
-        result.push(`<h3>${month.month}</h3>`);
+        if (month.events.length > 0)
+            result.push(`<h3 class="goldenrod">${month.month}</h3>`);
+        else
+            result.push(`<h3 class="gray">${month.month}</h3>`);
+
 
         for (let day of days) {
             result.push(day)

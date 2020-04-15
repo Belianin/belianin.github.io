@@ -40,6 +40,18 @@ body {
     color: goldenrod;
 }
 
+.goldenrod {
+    color: goldenrod;
+}
+
+.red {
+    color: red;
+}
+
+.gray {
+    color: gray;
+}
+
 .centered {
     width: 800px;
     display: block;
