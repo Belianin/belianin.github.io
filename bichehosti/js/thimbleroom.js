@@ -1,5 +1,9 @@
 import loadFile from './base.js'
 
+function tryToReplaceSmile(smileName) {
+    return `<img class="smile" src="./data/smiles/${smileName.substring(1, smileName.length - 1)}.png" alt="${smileName}"/>`;
+}
+
 function convertToHtml(section) {
     const result = [];
 
@@ -8,7 +12,7 @@ function convertToHtml(section) {
     for (let thimble of section.thimbles) {
         result.push(
     `<section class="term-section centered">
-        ${thimble.text}
+        ${thimble.text.replace(/:\w+:/g, tryToReplaceSmile)}
         <div class="history">
             <i>${thimble.description}</i>
         </div>

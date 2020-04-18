@@ -83,3 +83,9 @@ body {
 .menu-container {
     margin-bottom: 24px;
 }
+
+.smile {
+    display: inline;
+    width: auto;
+    height: 1.5em;
+}
