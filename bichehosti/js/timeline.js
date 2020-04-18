@@ -1,3 +1,5 @@
+import loadFile from "./base.js";
+
 function convertToHtml(year) {
     const result = [];
     result.push(`<h2 class="red">${year.year}</h2>`);
@@ -24,19 +26,6 @@ function convertToHtml(year) {
     }
 
     return result.join("");
-}
-
-function loadFile(filePath) {
-    let result = null;
-    const xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", filePath, false);
-    xmlHttp.send();
-
-    if (xmlHttp.status === 200) {
-        result = xmlHttp.responseText;
-    }
-
-    return result;
 }
 
 function onLoad() {

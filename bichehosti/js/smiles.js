@@ -1,3 +1,5 @@
+import loadFile from "./base.js";
+
 function countRating(smile) {
     let sum = 0.0;
     for (const r of smile.ratings) {
@@ -30,19 +32,6 @@ function convertToHtml(smile) {
             <i>${smile.history}</i>
         </div>
     </section>`
-}
-
-function loadFile(filePath) {
-    let result = null;
-    const xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", filePath, false);
-    xmlHttp.send();
-
-    if (xmlHttp.status === 200) {
-        result = xmlHttp.responseText;
-    }
-
-    return result;
 }
 
 function onLoad() {
