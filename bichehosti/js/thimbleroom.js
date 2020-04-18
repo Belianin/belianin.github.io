@@ -7,6 +7,8 @@ function tryToReplaceSmile(smileName) {
 function convertToHtml(section) {
     const result = [];
 
+    if (section.background)
+        result.push(`<img src="./data/images/${section.background}" alt="${section.background}" class="background-image"/>`);
     result.push(`<h2 class="goldenrod">${section.title}</h2>`);
 
     for (let thimble of section.thimbles) {
