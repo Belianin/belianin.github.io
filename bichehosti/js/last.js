@@ -2,32 +2,28 @@ import loadFile from "./base.js";
 
 function convertQuestion(question) {
         return `
-<tr>
-    <td>${question.score}</td>
-    <td>${question.question}</td>
-    <td>${question.answer}</td>
-    <td>${question.solved ? "<span style=\"color: green\"\>✔</span>" : "<span style=\"color: red\"\>❌</span>"}</td>
-</tr>`
+<div>
+    <span class="goldenrod">${question.score}</span>
+    ${question.question} — <span class="history">${question.answer}</span>
+    ${question.solved ? "<span style=\"color: green\"\>✔</span>" : "<span style=\"color: red\"\>❌</span>"}
+</div>`
 }
 
 function convertTheme(theme) {
     return `
-<tr>
-    <td>${theme.title}</td>
-    <td>${theme.description}</td>
-</tr>
+<h3><span class="goldenrod">${theme.title.toUpperCase()}</span><span class="history"> — ${theme.description}</span></h3>
+<p>${theme.description}</p>
 ${theme.questions.map(q => convertQuestion(q)).join("")}`
 }
 
 function convertToHtml(sigame) {
-    const result = ["<table>"];
+    const result = [];
 
     for (let i = 0; i < sigame.rounds.length; i++) {
-        result.push(`<tr><th>Раунд ${i + 1}</th></tr>`);
+        result.push(`<h2 class="red">${i+ 1} РАУНД</h2>`);
         result.push(sigame.rounds[i].themes.map(t => convertTheme(t)).join(""))
     }
 
-    result.push("</table>");
     return result.join("");
 }
 
