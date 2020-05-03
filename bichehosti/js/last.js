@@ -12,7 +12,6 @@ function convertQuestion(question) {
 function convertTheme(theme) {
     return `
 <h3><span class="goldenrod">${theme.title.toUpperCase()}</span><span class="history"> — ${theme.description}</span></h3>
-<p>${theme.description}</p>
 ${theme.questions.map(q => convertQuestion(q)).join("")}`
 }
 
