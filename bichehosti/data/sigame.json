@@ -20,15 +20,15 @@
             },
             {
               "score":300,
-              "question":"<img class=\"smile\" src=\"./data/smiles/igorbamboe2.png\" alt=\":igorbamboe2:\">",
-              "answer":"igorbamboe2",
-              "solved": true
-            },
-            {
-              "score":400,
               "question":"<img class=\"smile\" src=\"./data/smiles/ohrenelbamboe.png\" alt=\":ohrenelbamboe:\">",
               "answer":"ohrenelbamboe",
               "solved": true
+            },
+            {
+              "score":300,
+              "question":"<img class=\"smile\" src=\"./data/smiles/fbamboe.png\" alt=\":fbamboe:\">",
+              "answer":"fbamboe",
+              "solved": false
             },
             {
               "score":500,
