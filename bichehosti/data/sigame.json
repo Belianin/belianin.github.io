@@ -1,0 +1,497 @@
+{
+  "rounds":[
+    {
+      "themes":[
+        {
+          "title":"Знаменитые шедервы",
+          "description": "Нужно сказать название смайла",
+          "questions":[
+            {
+              "score":100,
+              "question":"<img class=\"smile\" src=\"./data/smiles/alohabamboe.png\" alt=\":alohabamboe:\">",
+              "answer":"alohabamboe",
+              "solved": true
+            },
+            {
+              "score":200,
+              "question":"<img class=\"smile\" src=\"./data/smiles/igorbamboe2.png\" alt=\":igorbamboe2:\">",
+              "answer":"igorbamboe2",
+              "solved": true
+            },
+            {
+              "score":300,
+              "question":"<img class=\"smile\" src=\"./data/smiles/igorbamboe2.png\" alt=\":igorbamboe2:\">",
+              "answer":"igorbamboe2",
+              "solved": true
+            },
+            {
+              "score":400,
+              "question":"<img class=\"smile\" src=\"./data/smiles/ohrenelbamboe.png\" alt=\":ohrenelbamboe:\">",
+              "answer":"ohrenelbamboe",
+              "solved": true
+            },
+            {
+              "score":500,
+              "question":"<img class=\"smile\" src=\"./data/smiles/badoobamboe.png\" alt=\":badoobamboe:\">",
+              "answer":"badoobamboe",
+              "solved": true
+            }
+          ]
+        },
+        {
+          "title":"Русская народная 2",
+          "description": "Вопросы про Доту 2",
+          "questions":[
+            {
+              "score":100,
+              "question":"Из-за кого мы не поехали на Интернешенал",
+              "answer":"Квир",
+              "solved": true
+            },
+            {
+              "score":200,
+              "question":"Любимый билд Несса",
+              "answer":"Тяж",
+              "solved": false
+            },
+            {
+              "score":300,
+              "question":"Чего нельзя сделать в Кастом Хиро?",
+              "answer":"Проиграть",
+              "solved": false
+            },
+            {
+              "score":400,
+              "question":"Ты можешь быть и физиком и магом. Главное не быть ****",
+              "answer":"Дебилом",
+              "solved": false
+            },
+            {
+              "score":500,
+              "question":"Единственный Бичехост, с которым у Алера винрейт больше 50%",
+              "answer":"<img src=\"./data/images/sigame/winrate.jpg\" alt=\"winrate\">",
+              "solved": true
+            }
+          ]
+        },
+        {
+          "title":"Математика",
+          "description": "На подумать",
+          "questions":[
+            {
+              "score":100,
+              "question":"Цена трёх картошек фри",
+              "answer":"11 рублей",
+              "solved": true
+            },
+            {
+              "score":200,
+              "question":"У большинства Бичехостов ники стостоят из 4 или 5 букв. А у кого ник состоит из 6 букв?",
+              "answer":"Муми Ти",
+              "solved": false
+            },
+            {
+              "score":300,
+              "question":"Исторический максимум цены бичекоина",
+              "answer":"0",
+              "solved": true
+            },
+            {
+              "score":400,
+              "question":"Суммарный возраст Хоста, Алера, Квира и Паши (30.04.2020)",
+              "answer":"23+22+28+16=89",
+              "solved": false
+            },
+            {
+              "score":500,
+              "question":"Квир, у тебя меньше, а у меня больше. (У Хоста вообще нет)",
+              "answer":"ПРИБАФКА К ПЕНСИИ)))",
+              "solved": false
+            }
+          ]
+        },
+        {
+          "title":"Бичиные технологии",
+          "description": "Вопросы о Бичесайте и Бичеботе",
+          "questions":[
+            {
+              "score":100,
+              "question":"На какой странице Бичесайта есть светлая тема?",
+              "answer":"Глоссарий",
+              "solved": true
+            },
+            {
+              "score":200,
+              "question":"В какое время умирает бичебот?",
+              "answer":"после 25 числа до конца месяца",
+              "solved": true
+            },
+            {
+              "score":300,
+              "question":"С какого раза начал отображаться смайл :mujikbamboe: в музее?",
+              "answer":"С третьего",
+              "solved": true
+            },
+            {
+              "score":400,
+              "question":"Первое что умел Бичебот",
+              "answer":"Хм, \"@username\" вызывает у тебя :emote:? Понятно...",
+              "solved": true
+            },
+            {
+              "score":500,
+              "question":"Какие команды нужно написать, чтобы посчитать статистику смайлов по реакция и использованиям в сообщениях? ",
+              "answer":"/t4 и /t5",
+              "solved": false
+            }
+          ]
+        },
+        {
+          "title":"Гигантские аниме-роботы",
+          "description": "Вопросы о Supreme Commander",
+          "questions":[
+            {
+              "score":100,
+              "question":"Любимый билд Несса",
+              "answer":"Т3",
+              "solved":true
+            },
+            {
+              "score":200,
+              "question":"Как Алер назовёт свою дочь?",
+              "answer":"Итота",
+              "solved":false
+            },
+            {
+              "score":300,
+              "question":"я молю Тебя о *****,\nо такой наивной, немного детской,\nя молю Тебя, оживи,\nв моем уставшем, погибшем сердце.\n\nя молю Тебя, просто будь,\nбудь рассветом моим в полуночи,\nбудь закатом моим, прошу,\nне оставь меня только мучиться.\n\nО чем молят?",
+              "answer":"Разведка / Скаут",
+              "solved":true
+            },
+            {
+              "score":400,
+              "question":"Рейтинг лучших игроков в FAF",
+              "answer":"сексибамбуу ТЫЩА, квазилигенд  ММ 900, ААААА гипербодя 800 рейтинга",
+              "solved":false
+            },
+            {
+              "score":500,
+              "question":"Расследование Навального о секретной бане Жириновского",
+              "answer":"Либераха порвал толстяка с воды",
+              "solved":true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "themes":[
+        {
+          "title":"Билдостроение",
+          "description": "Угадать два трейта Бичехоста",
+          "questions":[
+            {
+              "score":100,
+              "question":"Трейты Несса<img src=\"./data/images/sigame/builds1.png\" alt=\"builds\">",
+              "answer":"Добродушие и Крушила"
+            },
+            {
+              "score":200,
+              "question":"<img src=\"./data/images/sigame/builds1.png\" alt=\"builds\">",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"<img src=\"./data/images/sigame/builds2.png\" alt=\"builds\">",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"<img src=\"./data/images/sigame/builds2.png\" alt=\"builds\">",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Русская народная 2",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Математика",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Бичиные технологии",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Гигантские аниме-роботы",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "themes":[
+        {
+          "title":"Знаменитые шедервы",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Русская народная 2",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Математика",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Бичиные технологии",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        },
+        {
+          "title":"Гигантские аниме-роботы",
+          "questions":[
+            {
+              "score":100,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":200,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":300,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":400,
+              "question":"",
+              "answer":""
+            },
+            {
+              "score":500,
+              "question":"",
+              "answer":""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
