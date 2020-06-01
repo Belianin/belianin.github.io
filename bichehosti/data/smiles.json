@@ -891,7 +891,7 @@
     ]
   },
   {
-    "title": "lol2",
+    "title": "lol2 [УДАЛЕН]",
     "description": "League of Legends (2)",
     "history": "Неудачный эксперимент по внедрению смайла в стиле :supremebamboe:",
     "ratings": [
@@ -918,7 +918,7 @@
     ]
   },
   {
-    "title": "dota",
+    "title": "dota [УДАЛЕН]",
     "description": "Dota 2",
     "history": "Неудачный эксперимент по внедрению смайла в стиле :supremebamboe:",
     "ratings": [
@@ -1346,6 +1346,51 @@
       {
         "author": "qwear",
         "mark": 4
+      }
+    ]
+  },
+  {
+    "title": "ch [УДАЛЕН]",
+    "description": "Первая версия смайла в честь Custom Hero",
+    "history": "Плохо видно",
+    "ratings": [
+      {
+        "author": "aler",
+        "mark": 2
+      },
+      {
+        "author": "host",
+        "mark": 1
+      }
+    ]
+  },
+  {
+    "title": "ch2",
+    "description": "Вторая версия смайла в честь Custom Hero",
+    "history": "Сосалка + Хроно",
+    "ratings": [
+      {
+        "author": "aler",
+        "mark": 3
+      },
+      {
+        "author": "host",
+        "mark": 2
+      }
+    ]
+  },
+  {
+    "title": "notbad",
+    "description": "Not bad",
+    "history": "Витяныч 2",
+    "ratings": [
+      {
+        "author": "aler",
+        "mark": 3
+      },
+      {
+        "author": "host",
+        "mark": 2.5
       }
     ]
   }
