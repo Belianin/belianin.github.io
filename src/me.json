@@ -1,0 +1,126 @@
+{
+  "about": {
+    "lastName": "Белянин",
+    "firstName": "Андрей",
+    "patronymic": "Денисович",
+    "birthDate": "26-03-1998",
+    "city": "Екатеринбург"
+  },
+  "educations": [
+    {
+      "grade": "Среднее-специальное",
+      "university": "Колледж предпринемательства и социального управления",
+      "specialty": "Юрист",
+      "period": {
+        "from": 2012,
+        "to": 2014
+      },
+      "description": ""
+    },
+    {
+      "grade": "Неоконченное высшее",
+      "university": "Уральский Федеральный Университет",
+      "institution": "Институт государственного управления и предпринемательства",
+      "specialty": "Государственное и муниципальное управление",
+      "period": {
+        "from": 2015,
+        "to": 2017
+      },
+      "description": ""
+    },
+    {
+      "grade": "Бакалавр (пока не оконченное)",
+      "university": "Уральский Федеральный Университет",
+      "institution": "Институт естественный наук и математики (Матмех)",
+      "specialty": "Фундаментальная информатика и информационные технологии",
+      "period": {
+        "from": 2017,
+        "to": 2021
+      },
+      "description": ""
+    }
+  ],
+  "jobs": [
+    {
+      "company": {
+        "title": "СКБ Контур",
+        "description": "",
+        "url": ""
+      },
+      "description": "",
+      "positions": [
+        {
+          "position": "Специалист",
+          "startDate": "07-2019"
+        },
+        {
+          "position": "Младший инженер-программист",
+          "startDate": "09-2019"
+        },
+        {
+          "position": "Инженер-программист",
+          "startDate": "02-2020"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Open source",
+      "projects": [
+        {
+          "title": "Iuliia",
+          "description": "Порт библиотеки для транслитерации \"Iuliia\" на C# по мотивам статьи на Хабре https://habr.com/ru/post/499574/",
+          "url": "https://github.com/Belianin/iuliia-cs"
+        }
+      ]
+    },
+    {
+      "title": "C#",
+      "description": "Я не могу сказать что сильно горжусь этими проектами, но и не стыжусь. Местами код менее красивый чем мог бы быть, но главная его особенность в том, что он решает поставленные задачи, пусть и аудитория этих проектов от 2 до 6 людей",
+      "projects": [
+        {
+          "title": "Blocktrader",
+          "description": "",
+          "url": ""
+        },
+        {
+          "title": "Bichebot",
+          "description": "",
+          "url": ""
+        },
+        {
+          "title": "Prophecy",
+          "description": "",
+          "url": ""
+        },
+        {
+          "title": "Game of life",
+          "description": "Это классика, это знать надо! Закрытый гештальт любого программиста. Из примичательного, есть функциональная версия написанная на LINQ",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Web",
+      "description": "Вообще-то, фронтенд не является моей специализацией, но мне кажется, что современный разработчик должен уметь самостоятельно поднять, хотя бы небольшое, веб-приложение",
+      "projects": [
+        {
+          "title": "Blocktrader",
+          "description": "",
+          "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+        },
+        {
+          "title": "Бичехосты",
+          "description": "",
+          "url": ""
+        },
+        {
+          "title": "Эта страница",
+          "description": "",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}
