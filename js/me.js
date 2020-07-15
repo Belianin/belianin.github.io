@@ -100,7 +100,7 @@ function convertProjectCategories(categories) {
 function convertTags(data) {
     return `<section>
     <h2>Тэги</h2>
-    <i class="secondary">По моему тэги в реюзме это мусор их даже писать стыдно, но раз принятно, то ладно</i>
+    <i class="secondary">По моему тэги в реюзме это мусор и их даже писать стыдно, но раз принятно, то ладно</i>
     <div>${data.tags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>
     <i class="secondary">То что я щупал, но не использовал нормально</i>
     <div>${data.uselessTags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>    
