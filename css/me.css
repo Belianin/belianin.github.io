@@ -9,6 +9,7 @@ body {
 .secondary a {
     color: gray;
     text-decoration: none;
+    margin-right: 16px;
 }
 
 .joke {

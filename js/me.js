@@ -12,7 +12,6 @@ function loadFile(filePath) {
 
 function convertAbout(about) {
     return `<section>
-    <h2>Информация</h2>
     <section>
         <img src="src/me.jpg" class="photo">
         <div class="about">
@@ -46,7 +45,7 @@ function convertEducations(educations) {
     }
 
     return `<section>
-    <h2>Образование</h2>
+    <h1>Образование</h1>
     <section>${result.join("<hr>")}</section>
 </section>`
 }
@@ -59,11 +58,11 @@ function convertJobPosition(position) {
 
 function convertJob(job) {
     return `<section>
-    <div><b>${job.company.title}</b> — ${job.company.description}</div>
+    <div><b>${job.company.title}</b>${job.company.description ? " — " + job.company.description : ""}</div>
     <ul>
         ${job.positions.map(p => `<li>${convertJobPosition(p)}</li>`).join("\n")}
     </ul>
-    <div>${job.description}</div>
+    <div>${job.description.replace(/\n/g, "<br>")}</div>
 </section>`
 }
 
@@ -77,13 +76,14 @@ function convertJobs(jobs) {
 function convertProject(project) {
     return `<div>
     <div><b>${project.title}</b> — ${project.description}</div>
-    <div class="secondary">${project.urls.map(u => `<a href="u.url">${u.name}</a>`).join("\n")}</div>
+    <div class="secondary">${project.urls.map(u => `<a href="${u.url}">${u.name}</a>`).join("\n")}</div>
 </div>`
 }
 
 function convertCategory(category) {
     return `<section>
     <h3>${category.title}</h3>
+    ${category.description ? `<div class="secondary">${category.description}</div>`: ""}
     <hr>
     <section>${category.projects.map(p => convertProject(p)).join("\n")}</section>
 </section>`
@@ -91,16 +91,15 @@ function convertCategory(category) {
 
 function convertProjectCategories(categories) {
     return `<section>
-    <h2>Проекты</h2>
-    <i class="secondary">Учебные проекты в расчет не беру.</i>
+    <h1>Пет-проекты</h1>
     <section>${categories.map(c => convertCategory(c)).join("\n")}</section>
 </section>`
 }
 
 function convertTags(data) {
     return `<section>
-    <h2>Тэги</h2>
-    <i class="secondary">По моему тэги в реюзме это мусор и их даже писать стыдно, но раз принятно, то ладно</i>
+    <h1>Тэги</h1>
+    <i class="secondary">По моему тэги в реюзме это мусор и их даже писать стыдно, но раз принято, то ладно</i>
     <div>${data.tags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>
     <i class="secondary">То что я щупал, но не использовал нормально</i>
     <div>${data.uselessTags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>    
@@ -113,7 +112,7 @@ function convertDataToHTML(data) {
     result.push(convertAbout(data.about));
     result.push(convertEducations(data.educations));
     result.push(convertJobs(data.jobs));
-    result.push(convertTags(data));
+    //result.push(convertTags(data));
     result.push(convertProjectCategories(data.projectCategories));
     result.push(`<p><a href="${DATA_PATH}">JSON-резюме</a><p/>`);
 
