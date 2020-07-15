@@ -106,6 +106,13 @@ function convertTags(data) {
 </section>`
 }
 
+function convertLookingFor(lookingFor) {
+    return `<section>
+    <h1>Я ищу</h1>
+    <div>${lookingFor.replace(/\n/g, "<br>")}</div>
+</section>`
+}
+
 function convertDataToHTML(data) {
     const result = [];
 
@@ -114,6 +121,7 @@ function convertDataToHTML(data) {
     result.push(convertJobs(data.jobs));
     //result.push(convertTags(data));
     result.push(convertProjectCategories(data.projectCategories));
+    result.push(convertLookingFor(data.lookingFor));
     result.push(`<p><a href="${DATA_PATH}">JSON-резюме</a><p/>`);
 
     return result.join("\n");
