@@ -8,7 +8,7 @@ body {
 
 .secondary a {
     color: gray;
-    text-decoration: none;
+    text-decoration: none;;
 }
 
 .joke {
@@ -27,6 +27,7 @@ body {
 }
 
 .about {
+    margin-left: 16px;
     display: inline-block;
     vertical-align: top;
 }

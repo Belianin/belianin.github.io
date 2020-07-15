@@ -3,6 +3,10 @@
     "lastName": "Белянин",
     "firstName": "Андрей",
     "patronymic": "Денисович",
+    "status": "C# Middle Software-Engineer",
+    "telegram": "hyperbodya",
+    "git": "belianin",
+    "email": "belyaninwork@gmail.com",
     "birthDate": "26.03.1998",
     "city": "Екатеринбург"
   },

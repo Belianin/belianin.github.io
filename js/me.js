@@ -16,9 +16,14 @@ function convertAbout(about) {
     <section>
         <img src="src/me.jpg" class="photo">
         <div class="about">
-            <h3>${about.lastName} ${about.firstName} ${about.patronymic}</h3>
+            <h3>${about.lastName} ${about.firstName} ${about.patronymic} <span class="secondary">— ${about.status}</span></h3>
             <div>${about.birthDate}</div>
             <div>г. ${about.city}</div>
+            <br>
+            <p>Контакты:</p>
+            <div>Почта: <a href="mailto:${about.email}">${about.email}</a></div>
+            <div>Telemgram: <a href="https://t.me/${about.telegram}">@${about.telegram}</a></div>
+            <div>GitHub: <a href="https://github.com/${about.git}">${about.git}</a></div>
         </div>
     </section>
 </section>`
