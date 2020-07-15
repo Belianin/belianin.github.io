@@ -18,11 +18,11 @@ function convertAbout(about) {
         <div class="about">
             <h3>${about.lastName} ${about.firstName} ${about.patronymic} <span class="secondary">— ${about.status}</span></h3>
             <div>${about.birthDate}</div>
-            <div>${about.location.country} г. ${about.location.city}</div>
+            <div>${about.location.country}, г. ${about.location.city}</div>
             <br>
             <div><b>Контакты:</b></div>
             <div>Почта: <a href="mailto:${about.contacts.email}">${about.contacts.email}</a></div>
-            <div>Telemgram: <a href="https://t.me/${about.contacts.telegram}">@${about.contacts.telegram}</a></div>
+            <div>Telegram: <a href="https://t.me/${about.contacts.telegram}">@${about.contacts.telegram}</a></div>
             <div>GitHub: <a href="https://github.com/${about.contacts.github}">${about.contacts.github}</a></div>
             <br>
             <div>Английский ≈ ${about.languages["en"]}</div>
