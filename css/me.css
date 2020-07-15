@@ -24,6 +24,7 @@ body {
     width: 256px;
     height: auto;
     display: inline;
+    border-radius: 2px;
 }
 
 .about {
@@ -38,4 +39,5 @@ body {
     padding-right: 8px;
     margin-bottom: 4px;
     display: inline-block;
+    border-radius: 2px;
 }
