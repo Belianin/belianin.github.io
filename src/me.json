@@ -76,7 +76,7 @@
     }
   ],
   "tags": [
-    "C#", ".NET", "ASP NET", "Микросервисы", "SQL", "GIT", "ООП", "Python", "ФП", "SOLID", "KISS", "DRY", "JavaScript", "HTML", "ReactJS", "JSON", "XML", "TeamCity", "YouTrack", "Scrum", "Kanban"
+    "C#", ".NET", "ASP NET", "Микросервисы", "SQL", "GIT", "REST", "ООП", "Python", "ФП", "SOLID", "KISS", "DRY", "JavaScript", "HTML", "ReactJS", "JSON", "XML", "TeamCity", "YouTrack", "Scrum", "Kanban"
   ],
   "uselessTags": [
     "Java", "Kotlin", "Scala", "Haskell", "Django"
