@@ -1,0 +1,32 @@
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.secondary {
+    color: gray;
+}
+
+.secondary a {
+    color: gray;
+    text-decoration: none;
+}
+
+.joke {
+    color: lightgray;
+}
+
+.content {
+    width: 800px;
+    margin: auto;
+}
+
+.photo {
+    width: 256px;
+    height: auto;
+    display: inline;
+}
+
+.about {
+    display: inline-block;
+    vertical-align: top;
+}

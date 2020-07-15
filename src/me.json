@@ -3,7 +3,7 @@
     "lastName": "Белянин",
     "firstName": "Андрей",
     "patronymic": "Денисович",
-    "birthDate": "26-03-1998",
+    "birthDate": "26.03.1998",
     "city": "Екатеринбург"
   },
   "educations": [
@@ -15,7 +15,7 @@
         "from": 2012,
         "to": 2014
       },
-      "description": ""
+      "description": "В основном, я заканчивал колледж, чтобы просто закрыть поскорее среднее образование экстернатом (закончил 9 класс в 14 лет, колледж в 16). В принципе за ПТУшного юриста сойду."
     },
     {
       "grade": "Неоконченное высшее",
@@ -26,10 +26,10 @@
         "from": 2015,
         "to": 2017
       },
-      "description": ""
+      "description": "Поступил так как мечтал стать политиком или чиновником, но, разочаровавшись в качестве образования и перспективе учиться платно, перепоступил на свою мечту."
     },
     {
-      "grade": "Бакалавр (пока не оконченное)",
+      "grade": "Бакалавр",
       "university": "Уральский Федеральный Университет",
       "institution": "Институт естественный наук и математики (Матмех)",
       "specialty": "Фундаментальная информатика и информационные технологии",
@@ -37,41 +37,49 @@
         "from": 2017,
         "to": 2021
       },
-      "description": ""
+      "description": "Изначально поступал на специальность \"Компьютерная безопастность\", но потом понял, что software-engineering мне интереснее, и спенил специальность."
     }
   ],
   "jobs": [
     {
+      "description": "Я работаю в команде Онлайн-продаж. Мы создаем инструменты для продление или привлечения новых клиентов в онлайне (а не через звонки менеджеров). Команда у нас небольшая, так что и зона отвественности у всех разработчиков довольно обширная. Если все же выбирать чем я больше всего знанимаюсь, то это доставка. Доставкой счетов на почту, отправление закрывающих документов (на ту же почту или в Диадок, но это отдельная история). Писал различных демонов, АПИ, ETL-скрипты, SQL-процедуры. Иногда трогаю фронт для внутренней админки в качестве развелечения.",
       "company": {
         "title": "СКБ Контур",
-        "description": "",
-        "url": ""
+        "description": "Один из первых разработчиков программного обеспечения в России. С 1988 года компания помогает руководителям и бухгалтерам легче взаимодействовать с государством и контрагентами, упрощать внутренние процессы и быстрее справляться с ежедневными задачами."
       },
-      "description": "",
       "positions": [
         {
           "position": "Специалист",
-          "startDate": "07-2019"
+          "period": "июнь 2019 - сентябрь 2019"
         },
         {
           "position": "Младший инженер-программист",
-          "startDate": "09-2019"
+          "period": "сентябрь 2019 - февраль 2020"
         },
         {
           "position": "Инженер-программист",
-          "startDate": "02-2020"
+          "period": "февраль 2020 - настоящее время"
         }
       ]
     }
   ],
-  "projects": [
+  "projectCategories": [
     {
       "title": "Open source",
       "projects": [
         {
           "title": "Iuliia",
-          "description": "Порт библиотеки для транслитерации \"Iuliia\" на C# по мотивам статьи на Хабре https://habr.com/ru/post/499574/",
-          "url": "https://github.com/Belianin/iuliia-cs"
+          "description": "Официальный порт библиотеки для транслитерации \"Iuliia\" на C# по мотивам статьи на Хабре",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/iuliia-cs"
+            },
+            {
+              "name": "Хабр",
+              "url": "https://habr.com/ru/post/499574/"
+            }
+          ]
         }
       ]
     },
@@ -81,44 +89,87 @@
       "projects": [
         {
           "title": "Blocktrader",
-          "description": "",
-          "url": ""
+          "description": "Маленький стартапчик ориентированный на пользователей бирж по криптовалютам",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+            }
+          ]
         },
         {
           "title": "Bichebot",
-          "description": "",
-          "url": ""
+          "description": "Обычный Discord-бот, но зато крутится на бою",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+            }
+          ]
         },
         {
           "title": "Prophecy",
-          "description": "",
-          "url": ""
+          "description": "Api/Telegram-бот, через который я управляю сервером, на котором хостятся предыдущие проекты",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+            }
+          ]
         },
         {
           "title": "Game of life",
           "description": "Это классика, это знать надо! Закрытый гештальт любого программиста. Из примичательного, есть функциональная версия написанная на LINQ",
-          "url": ""
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+            }
+          ]
         }
       ]
     },
     {
       "title": "Web",
-      "description": "Вообще-то, фронтенд не является моей специализацией, но мне кажется, что современный разработчик должен уметь самостоятельно поднять, хотя бы небольшое, веб-приложение",
+      "description": "Вообще-то, фронтенд не является моей специализацией, но мне кажется, что современный разработчик должен уметь самостоятельно поднять, хотя бы небольшое, веб-приложение. Могу пользоваться как React, так и чистым HTML+JS+CSS",
       "projects": [
         {
           "title": "Blocktrader",
-          "description": "",
-          "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+          "description": "Frontend для Blocktrader, написанный на React.",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/Nexus.Blocktrader/tree/master/Blocktrader.Api/ClientApp"
+            }
+          ]
         },
         {
           "title": "Бичехосты",
-          "description": "",
-          "url": ""
+          "description": "Статичный сайт, смысл которого поймет ~6 людей на земле. Но выглядит неплохо ИМХО",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/bichehosti"
+            },
+            {
+              "name": "Сайт",
+              "url": "https://belianin.github.io/bichehosti/"
+            }
+          ]
         },
         {
           "title": "Эта страница",
-          "description": "",
-          "url": ""
+          "description": "Ну а что, разве плохо сверстано?",
+          "urls": [
+            {
+              "name": "GitHub",
+              "url": "https://github.com/Belianin/belianin.github.io"
+            },
+            {
+              "name": "Сайт",
+              "url": "https://belianin.github.io/me"
+            }
+          ]
         }
       ]
     }
