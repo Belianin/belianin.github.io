@@ -8,7 +8,7 @@ body {
 
 .secondary a {
     color: gray;
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 .joke {
@@ -30,4 +30,12 @@ body {
     margin-left: 16px;
     display: inline-block;
     vertical-align: top;
+}
+
+.tag {
+    background-color: lightgray;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 4px;
+    display: inline-block;
 }

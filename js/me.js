@@ -18,12 +18,14 @@ function convertAbout(about) {
         <div class="about">
             <h3>${about.lastName} ${about.firstName} ${about.patronymic} <span class="secondary">— ${about.status}</span></h3>
             <div>${about.birthDate}</div>
-            <div>г. ${about.city}</div>
+            <div>${about.location.country} г. ${about.location.city}</div>
             <br>
-            <p>Контакты:</p>
-            <div>Почта: <a href="mailto:${about.email}">${about.email}</a></div>
-            <div>Telemgram: <a href="https://t.me/${about.telegram}">@${about.telegram}</a></div>
-            <div>GitHub: <a href="https://github.com/${about.git}">${about.git}</a></div>
+            <div><b>Контакты:</b></div>
+            <div>Почта: <a href="mailto:${about.contacts.email}">${about.contacts.email}</a></div>
+            <div>Telemgram: <a href="https://t.me/${about.contacts.telegram}">@${about.contacts.telegram}</a></div>
+            <div>GitHub: <a href="https://github.com/${about.contacts.github}">${about.contacts.github}</a></div>
+            <br>
+            <div>Английский ≈ ${about.languages["en"]}</div>
         </div>
     </section>
 </section>`
@@ -90,7 +92,18 @@ function convertCategory(category) {
 function convertProjectCategories(categories) {
     return `<section>
     <h2>Проекты</h2>
+    <i class="secondary">Учебные проекты в расчет не беру.</i>
     <section>${categories.map(c => convertCategory(c)).join("\n")}</section>
+</section>`
+}
+
+function convertTags(data) {
+    return `<section>
+    <h2>Тэги</h2>
+    <i class="secondary">По моему тэги в реюзме это мусор их даже писать стыдно, но раз принятно, то ладно</i>
+    <div>${data.tags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>
+    <i class="secondary">То что я щупал, но не использовал нормально</i>
+    <div>${data.uselessTags.map(t => `<span class="tag">${t}</span>`).join("\n")}</div>    
 </section>`
 }
 
@@ -100,6 +113,7 @@ function convertDataToHTML(data) {
     result.push(convertAbout(data.about));
     result.push(convertEducations(data.educations));
     result.push(convertJobs(data.jobs));
+    result.push(convertTags(data));
     result.push(convertProjectCategories(data.projectCategories));
     result.push(`<p><a href="${DATA_PATH}">JSON-резюме</a><p/>`);
 

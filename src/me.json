@@ -4,11 +4,19 @@
     "firstName": "Андрей",
     "patronymic": "Денисович",
     "status": "C# Middle Software-Engineer",
-    "telegram": "hyperbodya",
-    "git": "belianin",
-    "email": "belyaninwork@gmail.com",
     "birthDate": "26.03.1998",
-    "city": "Екатеринбург"
+    "contacts": {
+      "telegram": "hyperbodya",
+      "github": "belianin",
+      "email": "belyaninwork@gmail.com"
+    },
+    "location": {
+      "country": "Россия",
+      "city": "Екатеринбург"
+    },
+    "languages": {
+      "en": "B2"
+    }
   },
   "educations": [
     {
@@ -66,6 +74,12 @@
         }
       ]
     }
+  ],
+  "tags": [
+    "C#", ".NET", "ASP NET", "Микросервисы", "SQL", "GIT", "ООП", "Python", "ФП", "SOLID", "KISS", "DRY", "JavaScript", "HTML", "ReactJS", "JSON", "XML", "TeamCity", "YouTrack", "Scrum", "Kanban"
+  ],
+  "uselessTags": [
+    "Java", "Kotlin", "Scala", "Haskell", "Django"
   ],
   "projectCategories": [
     {
