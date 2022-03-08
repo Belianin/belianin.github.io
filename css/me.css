@@ -1,5 +1,6 @@
 body {
     font-family: 'Jost', sans-serif;
+    font-size: 18px;
 }
 
 .secondary {
@@ -16,20 +17,29 @@ body {
     color: lightgray;
 }
 
+.header{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .content {
-    width: 800px;
-    margin: auto;
+    /*height:297mm;
+    width:210mm; auto*/
+    margin: 32px 32px 32px 32px;
+    background-color: white;
+    display: flex;
+    flex-direction: column
 }
 
 .photo {
-    width: 256px;
-    height: auto;
+    width: 384px;
+    height: 384px;
     display: inline;
     border-radius: 2px;
 }
 
 .about {
-    margin-left: 16px;
+    margin: 0px 16px 16px 32px;
     display: inline-block;
     vertical-align: top;
 }
@@ -41,4 +51,12 @@ body {
     margin-bottom: 4px;
     display: inline-block;
     border-radius: 2px;
+}
+
+ul {
+    padding-left: 4px;
+}
+
+li {
+    list-style: none;
 }

@@ -5,6 +5,16 @@
     
 }
 
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.article-title {
+    text-transform: uppercase;
+}
+
 code {
     text-decoration: wavy;
     background-color: #EAEAEA;
