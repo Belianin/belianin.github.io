@@ -23,9 +23,8 @@ body {
 }
 
 .content {
-    /*height:297mm;
-    width:210mm; auto*/
-    margin: 32px 32px 32px 32px;
+    width: 210mm;
+    margin: auto;
     background-color: white;
     display: flex;
     flex-direction: column
